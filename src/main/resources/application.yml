@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/biblioteca}
+    username: ${SPRING_DATASOURCE_USERNAME:biblioteca}
+    password: ${SPRING_DATASOURCE_PASSWORD:biblioteca}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
